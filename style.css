@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2:#d3d4db;
+    --white: #ffffff;
+    --body: #fefefe;
+    --secondary: #32CD32;
+    --secondary-2: #228B22;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--body);
+}
+
+
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+    padding: 12px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--secondary);
+    color: var(--black);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary);
+    border: 1px solid var(--gray-2);
+    color: var(--black );
+}
+
+.btn-outline-secondary:focus {
+    background-color: var(--secondary);
+    border: 1px solid var(--gray-2);
+    color: var(--black );;
+}
+
+.navbar .btn-outline-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.navbar {
+    padding: 32px 0;
+    background-color: var(--black);
+}
+
+.navbar h1 {
+    color: var(--white);
+}
+
+.nav-link {
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--secondary-2);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--white);
+}
+
+nav .navbar-toggler {
+    background-color: var(--white);
+}
+
+section.hero {
+    padding: 80px 0;
+}
+
+section.hero .text {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 69px;
+    color: var(--black);
+}
+
+section.hero img {
+    margin-top: -110px;
+}
+
+.buttons {
+    padding-top: 69px;
+}
+
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+section.information .text-information {
+    padding: 134px 0;
+}
+
+section.information h5 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+    margin-right: 35px;
+    margin-top: -140px;
+}
+
+section.information h4 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+    margin-right: 50px;
+    margin-top: -100px;
+}
+
+section.text-information h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    color: var(--black);
+    margin-right: 50px;
+}
+
+section.information p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+
+section.information .info-1 {
+    padding: 183px 0;
+}
+
+section.information .image {
+   margin-left: -75px;
+}
+
+
+
+
+
+footer {
+    margin-top: 250px;
+    padding-top: 200px;
+    background-color: var(--black);
+}
+
+footer .container {
+    height: 400px;
+}
+
+footer h3 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 48px;
+    color: var(--white);
+    margin-top: -150px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--gray-1);
+    margin-top: -75px;
+}
+
+footer a {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 18px;
+}
+
+footer .back {
+    line-height: 28px;
+    margin-top: 50px;
+    display: flex;
+}
+
+footer .links {
+    display: flex;
+}
+
+footer .links a {
+    color: var(--secondary);
+    margin: 30px 5px;
+    padding: 5px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+footer .links a:hover {
+    color: var(--secondary-2);
+}
+
+footer .copy {
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--gray-1);
+    line-height: 17px;
+    font-weight: 400;
+}
+
+/*-----------------------------------------------------------------------------
+Responsive section
+-----------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+
+    section.hero,
+    section.setup,
+    section.information {
+        text-align: center;
+    }
+
+
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+
+    section.hero img {
+        padding-top: 2.5rem;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    section.setup {
+        padding: 50px 0;
+    }
+
+    footer .container {
+        height: 600px;
+    }
+
+    footer .back {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .links {
+        justify-content: space-evenly;
+        margin-right: 35px;
+    }
+
+
+}
